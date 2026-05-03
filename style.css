@@ -56,15 +56,23 @@ body {
 .store-cover {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 200px;
 }
 
 .cover-img {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 50%, #4a7c42 100%);
-    /* Substitua pela url da foto real:
-       background: url('foto-capa.jpg') center/cover no-repeat; */
+    overflow: hidden;
+    display: block;
+}
+
+.cover-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .cover-overlay {
@@ -101,6 +109,16 @@ body {
     font-size: 36px;
     flex-shrink: 0;
     margin-top: -16px;
+    overflow: hidden;
+}
+
+.store-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 13px;
 }
 
 .store-details {
@@ -369,6 +387,22 @@ body {
     font-size: 12px;
     opacity: 0.5;
     margin-top: 2px;
+}
+
+.footer-dev {
+    font-size: 11px;
+    opacity: 0.35;
+    margin-top: 10px;
+}
+
+.footer-dev a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-dev a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
 }
 
 /* ===========================
@@ -862,7 +896,7 @@ body {
    =========================== */
 @media (min-width: 540px) {
     .store-cover {
-        height: 220px;
+        height: 260px;
     }
 
     .product-row-img {
@@ -895,6 +929,17 @@ body {
 @media (min-width: 680px) {
     .store-info {
         padding: 0 24px 24px;
+    }
+
+    .store-avatar {
+        width: 88px;
+        height: 88px;
+        border-radius: 18px;
+        margin-top: -20px;
+    }
+
+    .store-avatar img {
+        border-radius: 15px;
     }
 
     .cat-bar-inner {
