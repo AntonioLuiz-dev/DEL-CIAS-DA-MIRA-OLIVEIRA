@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Delícias da Mira Oliveira | Salgados e Doces em Magé, RJ</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Peça salgados, doces e kits artesanais da Mira Oliveira. Entrega em Magé e região, RJ. Encomende agora pelo WhatsApp.">
+    <meta name="keywords"
+        content="salgados Magé, doces Magé, coxinha Magé, brigadeiro Magé, encomenda salgados RJ, Mira Oliveira">
+    <meta name="author" content="Delícias da Mira Oliveira">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://deliciasdamira.com.br/">
+
+    <!-- Open Graph (WhatsApp, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Delícias da Mira Oliveira | Salgados e Doces em Magé">
+    <meta property="og:description"
+        content="Salgados fritos, assados, doces e kits artesanais. Encomende agora com entrega em Magé, RJ.">
+    <meta property="og:url" content="https://deliciasdamira.com.br/">
+    <meta property="og:image" content="https://deliciasdamira.com.br/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Delícias da Mira Oliveira">
+    <meta name="twitter:description" content="Salgados e doces artesanais em Magé, RJ. Peça pelo WhatsApp.">
+
+    <!-- Structured Data (Google) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Delícias da Mira Oliveira",
+        "description": "Salgados, doces e kits artesanais com entrega em Magé e região, RJ.",
+        "url": "https://deliciasdamira.com.br/",
+        "telephone": "+5521964770258",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Magé",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+        },
+        "servesCuisine": "Comida Caseira Brasileira",
+        "priceRange": "R$ 28 - R$ 60"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Lora:ital,wght@0,600;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CAPA + INFO DO ESTABELECIMENTO -->
+    <div class="store-cover">
+        <div class="cover-img" role="img" aria-label="Capa Delícias da Mira"></div>
+        <div class="cover-overlay"></div>
+    </div>
+
+    <div class="store-info">
+        <div class="store-avatar" aria-label="Logo Delícias da Mira">🍽️</div>
+        <div class="store-details">
+            <h1 class="store-name">Delícias da Mira</h1>
+            <p class="store-meta">Salgados e Doces Artesanais &bull; Magé, RJ</p>
+            <div class="store-badges">
+                <span class="badge">🕐 Encomenda antecipada</span>
+                <span class="badge">📍 Entrega local</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARRA DE CATEGORIAS FIXA -->
+    <nav class="cat-bar" id="catBar" role="navigation" aria-label="Categorias do cardápio">
+        <div class="cat-bar-inner">
+            <button class="cat-pill active" data-filter="todos" onclick="filtrar(this)">Todos</button>
+            <button class="cat-pill" data-filter="salgados" onclick="filtrar(this)">🥟 Salgados</button>
+            <button class="cat-pill" data-filter="doces" onclick="filtrar(this)">🍫 Doces</button>
+            <button class="cat-pill" data-filter="kits" onclick="filtrar(this)">🫖 Kits</button>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content" id="top">
+
+        <!-- SEÇÃO: SALGADOS -->
+        <section class="menu-section" id="sec-salgados" aria-label="Salgados">
+            <h2 class="menu-section-title">🥟 Salgados</h2>
+
+            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Frito</span>
+                    <h3 class="product-row-name" itemprop="name">Coxinha de Frango</h3>
+                    <p class="product-row-desc" itemprop="description">20 unidades. Massa crocante e recheio generoso de
+                        frango desfiado.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Coxinha de Frango (20un)', 35)"
+                            aria-label="Adicionar Coxinha de Frango">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Coxinha de Frango">🐔</div>
+            </article>
+
+            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Frito</span>
+                    <h3 class="product-row-name" itemprop="name">Quibe Frito</h3>
+                    <p class="product-row-desc" itemprop="description">20 unidades. Crocante por fora, macio e temperado
+                        por dentro.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="30.00">R$ 30,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Quibe Frito (20un)', 30)"
+                            aria-label="Adicionar Quibe Frito">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Quibe Frito">🥙</div>
+            </article>
+
+            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Empada de Frango</h3>
+                    <p class="product-row-desc" itemprop="description">12 unidades. Massa podre artesanal com recheio de
+                        frango e requeijão.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="28.00">R$ 28,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Empada de Frango (12un)', 28)"
+                            aria-label="Adicionar Empada">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Empada de Frango">🥧</div>
+            </article>
+
+            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Frito</span>
+                    <h3 class="product-row-name" itemprop="name">Bolinha de Queijo</h3>
+                    <p class="product-row-desc" itemprop="description">25 unidades. Queijo derretido por dentro,
+                        crocante por fora.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Bolinha de Queijo (25un)', 35)"
+                            aria-label="Adicionar Bolinha de Queijo">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Bolinha de Queijo">🧀</div>
+            </article>
+
+            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Enroladinho de Salsicha</h3>
+                    <p class="product-row-desc" itemprop="description">25 unidades. Massa fofinha com salsicha inteira
+                        dentro.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="32.00">R$ 32,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Enroladinho de Salsicha (25un)', 32)"
+                            aria-label="Adicionar Enroladinho">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Enroladinho de Salsicha">🌭</div>
+            </article>
+        </section>
+
+        <!-- SEÇÃO: DOCES -->
+        <section class="menu-section" id="sec-doces" aria-label="Doces">
+            <h2 class="menu-section-title">🍫 Doces</h2>
+
+            <article class="product-row" data-category="doces" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag doce">Docinho</span>
+                    <h3 class="product-row-name" itemprop="name">Brigadeiro Gourmet</h3>
+                    <p class="product-row-desc" itemprop="description">30 unidades. Chocolate belga, enrolado no
+                        granulado crocante.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="45.00">R$ 45,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Brigadeiro Gourmet (30un)', 45)"
+                            aria-label="Adicionar Brigadeiro">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Brigadeiro Gourmet">🍫</div>
+            </article>
+
+            <article class="product-row" data-category="doces" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag doce">Docinho</span>
+                    <h3 class="product-row-name" itemprop="name">Beijinho de Coco</h3>
+                    <p class="product-row-desc" itemprop="description">30 unidades. Coco fresco ralado, com cravo na
+                        decoração.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="40.00">R$ 40,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Beijinho de Coco (30un)', 40)"
+                            aria-label="Adicionar Beijinho">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Beijinho de Coco">🥥</div>
+            </article>
+
+            <article class="product-row" data-category="doces" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag doce">Docinho</span>
+                    <h3 class="product-row-name" itemprop="name">Casadinho</h3>
+                    <p class="product-row-desc" itemprop="description">30 unidades. Metade brigadeiro, metade beijinho.
+                        Par perfeito.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="45.00">R$ 45,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Casadinho (30un)', 45)"
+                            aria-label="Adicionar Casadinho">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Casadinho">🍬</div>
+            </article>
+        </section>
+
+        <!-- SEÇÃO: KITS -->
+        <section class="menu-section" id="sec-kits" aria-label="Kits">
+            <h2 class="menu-section-title">🫖 Kits</h2>
+
+            <article class="product-row destaque" data-category="kits" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag kit">Kit</span>
+                    <h3 class="product-row-name" itemprop="name">Kit Chá da Tarde</h3>
+                    <p class="product-row-desc" itemprop="description">25 salgados fritos + 15 assados + 6 pãezinhos
+                        caseiros. Serve até 8 pessoas.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="60.00">R$ 60,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Kit Chá da Tarde', 60)"
+                            aria-label="Adicionar Kit Chá da Tarde">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Kit Chá da Tarde">🫖</div>
+            </article>
+
+            <article class="product-row" data-category="kits" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag kit">Kit</span>
+                    <h3 class="product-row-name" itemprop="name">Torta Salgada Inteira</h3>
+                    <p class="product-row-desc" itemprop="description">Frango com catupiry. Serve até 10 pessoas. Faça o
+                        pedido com 1 dia de antecedência.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="55.00">R$ 55,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Torta Salgada Inteira', 55)"
+                            aria-label="Adicionar Torta Salgada">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Torta Salgada">🥧</div>
+            </article>
+
+            <article class="product-row" data-category="kits" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag kit">Kit</span>
+                    <h3 class="product-row-name" itemprop="name">Kit Festa Completo</h3>
+                    <p class="product-row-desc" itemprop="description">50 salgados + 30 docinhos + 10 pãezinhos. Ideal
+                        para aniversários e confraternizações.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="110.00">R$ 110,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Kit Festa Completo', 110)"
+                            aria-label="Adicionar Kit Festa">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Kit Festa">🎉</div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer" role="contentinfo">
+        <p>Delícias da Mira Oliveira &bull; Magé, RJ</p>
+        <p class="footer-sub">Feito com 💚 para sua família</p>
+    </footer>
+
+    <!-- BARRA DE CARRINHO FIXA NO RODAPÉ -->
+    <div class="cart-bar" id="cartBar" style="display:none" role="complementary" aria-label="Resumo do carrinho">
+        <div class="cart-bar-inner" onclick="toggleCart()">
+            <div class="cart-bar-left">
+                <span class="cart-bar-badge" id="cartBarBadge">0</span>
+                <span class="cart-bar-label">Ver pedido</span>
+            </div>
+            <span class="cart-bar-total" id="cartBarTotal">R$ 0,00</span>
+            <span class="cart-bar-arrow">›</span>
+        </div>
+    </div>
+
+    <!-- MODAL DO CARRINHO -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()" role="dialog" aria-modal="true"
+        aria-label="Carrinho de compras"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-header">
+            <h2>Seu Pedido</h2>
+            <button class="close-modal" onclick="toggleCart()" aria-label="Fechar carrinho">✕</button>
+        </div>
+
+        <div class="cart-modal-body" id="cartItems">
+            <p class="cart-empty">Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="cart-modal-footer" id="cartFooter" style="display:none">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong id="cartTotal">R$ 0,00</strong>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeCliente">Seu nome</label>
+                <input type="text" id="nomeCliente" placeholder="Nome completo" autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label for="enderecoCliente">Endereço de entrega</label>
+                <textarea id="enderecoCliente" placeholder="Rua, número, bairro"
+                    autocomplete="street-address"></textarea>
+            </div>
+
+            <div class="payment-section">
+                <p class="payment-label">Pagamento</p>
+                <div class="payment-opts">
+                    <label class="pay-opt">
+                        <input type="radio" name="pagamento" value="PIX" checked>
+                        <span>💸 PIX</span>
+                    </label>
+                    <label class="pay-opt">
+                        <input type="radio" name="pagamento" value="Dinheiro">
+                        <span>💵 Dinheiro</span>
+                    </label>
+                    <label class="pay-opt">
+                        <input type="radio" name="pagamento" value="Cartão">
+                        <span>💳 Cartão</span>
+                    </label>
+                </div>
+
+                <div class="pix-box" id="pixBox">
+                    <p class="pix-box-label">Chave PIX</p>
+                    <div class="pix-box-key">
+                        <span id="pixKeyText">(21) 96477-0258</span>
+                        <button onclick="copiarPix()" type="button">Copiar</button>
+                    </div>
+                    <p class="pix-box-hint">Envie o comprovante junto com o pedido.</p>
+                </div>
+            </div>
+
+            <button class="whatsapp-btn" onclick="enviarPedido()" type="button">
+                📲 Confirmar via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
