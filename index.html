@@ -80,192 +80,249 @@
     <nav class="cat-bar" id="catBar" role="navigation" aria-label="Categorias do cardápio">
         <div class="cat-bar-inner">
             <button class="cat-pill active" data-filter="todos" onclick="filtrar(this)">Todos</button>
-            <button class="cat-pill" data-filter="salgados" onclick="filtrar(this)">🥟 Salgados</button>
-            <button class="cat-pill" data-filter="doces" onclick="filtrar(this)">🍫 Doces</button>
-            <button class="cat-pill" data-filter="kits" onclick="filtrar(this)">🫖 Kits</button>
+            <button class="cat-pill" data-filter="congelados" onclick="filtrar(this)">🧊 Salgados Congelados</button>
+            <button class="cat-pill" data-filter="assados" onclick="filtrar(this)">🔥 Salgados Assados</button>
         </div>
     </nav>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content" id="top">
 
-        <!-- SEÇÃO: SALGADOS -->
-        <section class="menu-section" id="sec-salgados" aria-label="Salgados">
-            <h2 class="menu-section-title">🥟 Salgados</h2>
+        <!-- SEÇÃO: SALGADOS CONGELADOS -->
+        <section class="menu-section" id="sec-congelados" aria-label="Salgados Congelados">
+            <h2 class="menu-section-title">🧊 Salgados Congelados</h2>
 
-            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag">Frito</span>
-                    <h3 class="product-row-name" itemprop="name">Coxinha de Frango</h3>
-                    <p class="product-row-desc" itemprop="description">20 unidades. Massa crocante e recheio generoso de
-                        frango desfiado.</p>
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Coxinha</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de coxinha congelada, pronta para fritar.
+                    </p>
                     <div class="product-row-footer">
                         <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Coxinha de Frango (20un)', 35)"
-                            aria-label="Adicionar Coxinha de Frango">+</button>
+                        <button class="add-row-btn" onclick="addToCart('Coxinha (Cento)', 35)"
+                            aria-label="Adicionar Coxinha">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Coxinha de Frango">🐔</div>
+                <div class="product-row-img" role="img" aria-label="Coxinha">🐔</div>
             </article>
 
-            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag">Frito</span>
-                    <h3 class="product-row-name" itemprop="name">Quibe Frito</h3>
-                    <p class="product-row-desc" itemprop="description">20 unidades. Crocante por fora, macio e temperado
-                        por dentro.</p>
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Medalhão de Calabresa</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de medalhão de calabresa congelado.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="30.00">R$ 30,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Quibe Frito (20un)', 30)"
-                            aria-label="Adicionar Quibe Frito">+</button>
+                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Medalhão de Calabresa (Cento)', 35)"
+                            aria-label="Adicionar Medalhão de Calabresa">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Quibe Frito">🥙</div>
+                <div class="product-row-img" role="img" aria-label="Medalhão de Calabresa">🥓</div>
             </article>
 
-            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag">Assado</span>
-                    <h3 class="product-row-name" itemprop="name">Empada de Frango</h3>
-                    <p class="product-row-desc" itemprop="description">12 unidades. Massa podre artesanal com recheio de
-                        frango e requeijão.</p>
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Kibe</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de kibe congelado, pronto para fritar.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="28.00">R$ 28,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Empada de Frango (12un)', 28)"
+                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Kibe (Cento)', 35)"
+                            aria-label="Adicionar Kibe">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Kibe">🥙</div>
+            </article>
+
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Napolitano</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de napolitano congelado.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Napolitano (Cento)', 35)"
+                            aria-label="Adicionar Napolitano">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Napolitano">🍕</div>
+            </article>
+
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Salsicha</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de enroladinho de salsicha congelado.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Salsicha (Cento)', 35)"
+                            aria-label="Adicionar Salsicha">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Salsicha">🌭</div>
+            </article>
+
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Mini Pastel</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de mini pastel congelado.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="50.00">R$ 50,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Mini Pastel (Cento)', 50)"
+                            aria-label="Adicionar Mini Pastel">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Mini Pastel">🥟</div>
+            </article>
+
+            <article class="product-row" data-category="congelados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag">Congelado</span>
+                    <h3 class="product-row-name" itemprop="name">Camarão Empanado</h3>
+                    <p class="product-row-desc" itemprop="description">Camarão empanado congelado. Preço por unidade.
+                    </p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="2.00">R$ 2,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Camarão Empanado (Unidade)', 2)"
+                            aria-label="Adicionar Camarão Empanado">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Camarão Empanado">🦐</div>
+            </article>
+        </section>
+
+        <!-- SEÇÃO: SALGADOS ASSADOS -->
+        <section class="menu-section" id="sec-assados" aria-label="Salgados Assados">
+            <h2 class="menu-section-title">🔥 Salgados Assados</h2>
+
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Hamburguinho com Cheddar</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de hamburguinho assado com cheddar.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="90.00">R$ 90,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Hamburguinho com Cheddar (Cento)', 90)"
+                            aria-label="Adicionar Hamburguinho com Cheddar">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Hamburguinho com Cheddar">🍔</div>
+            </article>
+
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Hamburguinho com Requeijão</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de hamburguinho assado com requeijão
+                        cremoso.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="90.00">R$ 90,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Hamburguinho com Requeijão (Cento)', 90)"
+                            aria-label="Adicionar Hamburguinho com Requeijão">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Hamburguinho com Requeijão">🍔</div>
+            </article>
+
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Mini Pizza</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de mini pizza assada.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="80.00">R$ 80,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Mini Pizza (Cento)', 80)"
+                            aria-label="Adicionar Mini Pizza">+</button>
+                    </div>
+                </div>
+                <div class="product-row-img" role="img" aria-label="Mini Pizza">🍕</div>
+            </article>
+
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
+                <div class="product-row-info">
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Empada de Queijo / Frango</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de empada assada de queijo ou frango.</p>
+                    <div class="product-row-footer">
+                        <span class="product-row-price" itemprop="price" content="80.00">R$ 80,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Empada de Queijo/Frango (Cento)', 80)"
                             aria-label="Adicionar Empada">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Empada de Frango">🥧</div>
+                <div class="product-row-img" role="img" aria-label="Empada">🥧</div>
             </article>
 
-            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag">Frito</span>
-                    <h3 class="product-row-name" itemprop="name">Bolinha de Queijo</h3>
-                    <p class="product-row-desc" itemprop="description">25 unidades. Queijo derretido por dentro,
-                        crocante por fora.</p>
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Doguinho</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de doguinho assado.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="35.00">R$ 35,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Bolinha de Queijo (25un)', 35)"
-                            aria-label="Adicionar Bolinha de Queijo">+</button>
+                        <span class="product-row-price" itemprop="price" content="80.00">R$ 80,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Doguinho (Cento)', 80)"
+                            aria-label="Adicionar Doguinho">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Bolinha de Queijo">🧀</div>
+                <div class="product-row-img" role="img" aria-label="Doguinho">🌭</div>
             </article>
 
-            <article class="product-row" data-category="salgados" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag">Assado</span>
-                    <h3 class="product-row-name" itemprop="name">Enroladinho de Salsicha</h3>
-                    <p class="product-row-desc" itemprop="description">25 unidades. Massa fofinha com salsicha inteira
-                        dentro.</p>
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Joelinho</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de joelinho assado.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="32.00">R$ 32,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Enroladinho de Salsicha (25un)', 32)"
-                            aria-label="Adicionar Enroladinho">+</button>
+                        <span class="product-row-price" itemprop="price" content="80.00">R$ 80,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Joelinho (Cento)', 80)"
+                            aria-label="Adicionar Joelinho">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Enroladinho de Salsicha">🌭</div>
-            </article>
-        </section>
-
-        <!-- SEÇÃO: DOCES -->
-        <section class="menu-section" id="sec-doces" aria-label="Doces">
-            <h2 class="menu-section-title">🍫 Doces</h2>
-
-            <article class="product-row" data-category="doces" itemscope itemtype="https://schema.org/Product">
-                <div class="product-row-info">
-                    <span class="product-row-tag doce">Docinho</span>
-                    <h3 class="product-row-name" itemprop="name">Brigadeiro Gourmet</h3>
-                    <p class="product-row-desc" itemprop="description">30 unidades. Chocolate belga, enrolado no
-                        granulado crocante.</p>
-                    <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="45.00">R$ 45,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Brigadeiro Gourmet (30un)', 45)"
-                            aria-label="Adicionar Brigadeiro">+</button>
-                    </div>
-                </div>
-                <div class="product-row-img" role="img" aria-label="Brigadeiro Gourmet">🍫</div>
+                <div class="product-row-img" role="img" aria-label="Joelinho">🥐</div>
             </article>
 
-            <article class="product-row" data-category="doces" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag doce">Docinho</span>
-                    <h3 class="product-row-name" itemprop="name">Beijinho de Coco</h3>
-                    <p class="product-row-desc" itemprop="description">30 unidades. Coco fresco ralado, com cravo na
-                        decoração.</p>
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Esfiha Carne / Queijo</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de esfiha assada de carne ou queijo.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="40.00">R$ 40,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Beijinho de Coco (30un)', 40)"
-                            aria-label="Adicionar Beijinho">+</button>
+                        <span class="product-row-price" itemprop="price" content="80.00">R$ 80,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Esfiha Carne/Queijo (Cento)', 80)"
+                            aria-label="Adicionar Esfiha">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Beijinho de Coco">🥥</div>
+                <div class="product-row-img" role="img" aria-label="Esfiha">🥟</div>
             </article>
 
-            <article class="product-row" data-category="doces" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row destaque" data-category="assados" itemscope
+                itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag doce">Docinho</span>
-                    <h3 class="product-row-name" itemprop="name">Casadinho</h3>
-                    <p class="product-row-desc" itemprop="description">30 unidades. Metade brigadeiro, metade beijinho.
-                        Par perfeito.</p>
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Bandeja com 20 Salgados Assados</h3>
+                    <p class="product-row-desc" itemprop="description">Bandeja sortida com 20 salgados assados.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="45.00">R$ 45,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Casadinho (30un)', 45)"
-                            aria-label="Adicionar Casadinho">+</button>
+                        <span class="product-row-price" itemprop="price" content="22.00">R$ 22,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Bandeja 20 Salgados Assados', 22)"
+                            aria-label="Adicionar Bandeja">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Casadinho">🍬</div>
-            </article>
-        </section>
-
-        <!-- SEÇÃO: KITS -->
-        <section class="menu-section" id="sec-kits" aria-label="Kits">
-            <h2 class="menu-section-title">🫖 Kits</h2>
-
-            <article class="product-row destaque" data-category="kits" itemscope itemtype="https://schema.org/Product">
-                <div class="product-row-info">
-                    <span class="product-row-tag kit">Kit</span>
-                    <h3 class="product-row-name" itemprop="name">Kit Chá da Tarde</h3>
-                    <p class="product-row-desc" itemprop="description">25 salgados fritos + 15 assados + 6 pãezinhos
-                        caseiros. Serve até 8 pessoas.</p>
-                    <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="60.00">R$ 60,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Kit Chá da Tarde', 60)"
-                            aria-label="Adicionar Kit Chá da Tarde">+</button>
-                    </div>
-                </div>
-                <div class="product-row-img" role="img" aria-label="Kit Chá da Tarde">🫖</div>
+                <div class="product-row-img" role="img" aria-label="Bandeja">🍱</div>
             </article>
 
-            <article class="product-row" data-category="kits" itemscope itemtype="https://schema.org/Product">
+            <article class="product-row" data-category="assados" itemscope itemtype="https://schema.org/Product">
                 <div class="product-row-info">
-                    <span class="product-row-tag kit">Kit</span>
-                    <h3 class="product-row-name" itemprop="name">Torta Salgada Inteira</h3>
-                    <p class="product-row-desc" itemprop="description">Frango com catupiry. Serve até 10 pessoas. Faça o
-                        pedido com 1 dia de antecedência.</p>
+                    <span class="product-row-tag assado">Assado</span>
+                    <h3 class="product-row-name" itemprop="name">Sanduíche de Frango Cremoso</h3>
+                    <p class="product-row-desc" itemprop="description">Cento de sanduíche de frango cremoso assado.</p>
                     <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="55.00">R$ 55,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Torta Salgada Inteira', 55)"
-                            aria-label="Adicionar Torta Salgada">+</button>
+                        <span class="product-row-price" itemprop="price" content="80.00">R$ 80,00</span>
+                        <button class="add-row-btn" onclick="addToCart('Sanduíche de Frango Cremoso (Cento)', 80)"
+                            aria-label="Adicionar Sanduíche">+</button>
                     </div>
                 </div>
-                <div class="product-row-img" role="img" aria-label="Torta Salgada">🥧</div>
-            </article>
-
-            <article class="product-row" data-category="kits" itemscope itemtype="https://schema.org/Product">
-                <div class="product-row-info">
-                    <span class="product-row-tag kit">Kit</span>
-                    <h3 class="product-row-name" itemprop="name">Kit Festa Completo</h3>
-                    <p class="product-row-desc" itemprop="description">50 salgados + 30 docinhos + 10 pãezinhos. Ideal
-                        para aniversários e confraternizações.</p>
-                    <div class="product-row-footer">
-                        <span class="product-row-price" itemprop="price" content="110.00">R$ 110,00</span>
-                        <button class="add-row-btn" onclick="addToCart('Kit Festa Completo', 110)"
-                            aria-label="Adicionar Kit Festa">+</button>
-                    </div>
-                </div>
-                <div class="product-row-img" role="img" aria-label="Kit Festa">🎉</div>
+                <div class="product-row-img" role="img" aria-label="Sanduíche">🥪</div>
             </article>
         </section>
 
